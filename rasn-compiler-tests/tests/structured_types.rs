@@ -598,7 +598,7 @@ e2e_pdu!(
     r#"
         #[doc = " Anonymous SEQUENCE OF member "]
         #[derive(AsnType, Debug, Clone, Decode, Encode, PartialEq, Eq, Hash)]
-        #[rasn(delegate, tag(context, 0), identifier = "INTEGER")]
+        #[rasn(delegate, identifier = "INTEGER")]
         pub struct AnonymousAMember(pub Integer);
 
         #[doc = " Inner type "]
